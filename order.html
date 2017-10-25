@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Galvanize Delivers Order Form</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Galvanize Delivers</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home Page</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home Page</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+
+  <div class="row" id="contain">
+    <div class="section">
+
+      <!--   Icon Section   -->
+
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/burger.jpg">
+            </div>
+            <div class="card-content">
+              <h5 class="card-title">Burger</h5>
+              <h6>Angus Beef, Gorgonzola, Bacon</h6>
+              <p>$23</p>
+              <a href="#" class="addItem">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/fried-chicken.jpg">
+            </div>
+            <div class="card-content">
+             <h5 class="card-title">Fried Chicken</h5>
+             <h6>Old-Style Recipe</h6>
+             <p>$28</p>
+             <a href="#" class="addItem">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+         <div class="col s12 m3">
+           <div class="card">
+             <div class="card-image">
+               <img src="img/pizza.jpg">
+             </div>
+             <div class="card-content">
+               <h5 class="card-title">Pizza</h5>
+               <h6>Fresh from our wood-fired oven</h6>
+               <p>$17</p>
+               <a href="#" class="addItem">ADD TO CART</a>
+             </div>
+           </div>
+         </div>
+         <div class="col s12 m3">
+           <div class="card">
+             <div class="card-image">
+               <img src="img/paella.jpg">
+             </div>
+             <div class="card-content">
+               <h5 class="card-title">Paella</h5>
+               <h6>Authentic & Amazing</h6>
+               <p>$47</p>
+               <a href="#" class="addItem">ADD TO CART</a>
+             </div>
+           </div>
+         </div>
+       </div>
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ribs.jpg">
+            </div>
+            <div class="card-content">
+              <h5 class="card-title">Ribs</h5>
+              <h6>Slow-cooked to perfection</h6>
+              <p>$35</p>
+              <a href="#" class="addItem">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/spaghetti.jpg">
+            </div>
+            <div class="card-content">
+              <h5 class="card-title">Spaghetti</h5>
+              <h6>¡Ciao Bella!</h6>
+              <p>$19</p>
+              <a href="#" class="addItem">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/taco.jpg">
+            </div>
+            <div class="card-content">
+              <h5 class="card-title">Tacos</h5>
+              <h6>Fire-grilled Steak</h6>
+              <p>$21</p>
+              <a href="#" class="addItem">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ice_cream.jpg">
+            </div>
+            <div class="card-content">
+              <h5 class="card-title">Ice Cream</h5>
+              <h6>Worth every penny</h6>
+              <p>$12</p>
+              <a href="#" class="addItem">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <table class="striped" id="total-table">
+            <tr class="tall">
+              <th class="table-label">Subtotal</th>
+              <th id="subtotal">$ 0.00</th>
+            </tr>
+            <tr class="tall">
+              <th class="table-label">Tax</th>
+              <th id="tax">$ 0.00</th>
+            </tr>
+            <tr class="tall">
+              <th class="table-label">Delivery Charge</th>
+              <th id="delivery">$ 0.00</th>
+            </tr>
+            <tr class="tall">
+              <th class="table-label">Convenience Fee</th>
+              <th id="convenience">$ 0.00</th>
+            </tr>
+            <tr class="tall">
+              <th class="table-label">Grand Total</th>
+              <th id="total">$ 0.00</th>
+            </tr>
+          </table>
+        </div>
+        <form class="col s12 m6" id="form" action="success.html">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="name" type="text" class="validate" required>
+            <label for="icon_prefix">Name</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <input id="phone" type="tel" class="validate" required>
+            <label for="icon_telephone">Telephone</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" class="validate" required>
+            <label for="icon_email" data-error="wrong" data-success="ok">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">location_city</i>
+            <input id="address" type="text" class="validate" required>
+            <label for="icon_location_city">Address</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">location_on</i>
+            <input id="zip" type="text" class="validate" required>
+            <label for="icon_location_on">Zip Code</label>
+          </div>
+
+          <button class="btn disabled" type="submit" name="action" formaction="success.html">Place Order
+            <i class="material-icons left">send</i>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Galvanize Delivers</h5>
+          <p class="grey-text text-lighten-4">This is a super cool project I am working on for Galvanize's Web Development Immersive Program - g68.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Navigation</h5>
+          <ul>
+            <li><a class="white-text" href="index.html">Home Page</a></li>
+            <li><a class="white-text" href="order.html">Order Page</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/p-glynn">Github</a></li>
+            <li><a class="white-text" href="http://galvanize.com">Galvanize</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <a href="http://www.galvanize.com">&copy; Galvanize Delivers </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src ="js/script.js"></script>
+  </body>
+</html>
